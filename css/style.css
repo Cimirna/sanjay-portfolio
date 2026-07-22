@@ -587,3 +587,99 @@ body {
     0% { background-position: 0% 0%; }
     100% { background-position: 100% 100%; }
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+    
+    .nav-btn {
+        padding: 0.5rem 1rem;
+    }
+
+    .hero {
+        padding-top: 10rem;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: clamp(2rem, 10vw, 4rem);
+        margin-bottom: 1rem;
+        word-break: break-word;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .about-section, .skills-section, .software-section, .gallery-section, .experience-section, .contact-section {
+        padding: 4rem 5%;
+    }
+    
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+
+    .about-image {
+        max-width: 100%;
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 16 / 9;
+        height: auto;
+    }
+    
+    .gallery-overlay {
+        padding: 1.2rem;
+    }
+    
+    .gallery-overlay h3 {
+        font-size: 1.2rem;
+    }
+    
+    .project-desc {
+        font-size: 0.85rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-container {
+        padding: 2rem 1.5rem;
+    }
+}
